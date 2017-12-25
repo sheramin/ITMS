@@ -1,0 +1,15 @@
+.fa{
+	cursor: pointer;
+}
+
+.fa-trash{
+	color: red;
+}
+
+.fa-edit{
+	color: blue;
+}
+
+.fa-list{
+	color: green;
+}
