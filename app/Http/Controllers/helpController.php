@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Helps;
 
+
 class helpController extends Controller
 {
     /**
@@ -42,8 +43,7 @@ class helpController extends Controller
         $newHelp->email = $email;
         $newHelp->help_content = $msg;
         if($newHelp->save()){
-            // return data:{} json_encode("I'll come to you in my earliest, thanks."); 
-            return response()->json(['response' => 'I will come to in my earliest', 'status' => 'success']);   
+            return response()->json(['response' => 'I will come to you in my earliest', 'status' => 'success']);
         }else{
             return response()->json(['response' => 'Sorry your message missed, please try again.', 'status' => 'warning']);
         }

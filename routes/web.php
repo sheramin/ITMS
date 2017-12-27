@@ -28,7 +28,7 @@ Route::prefix('requests')->group(function(){
 	Route::post('/submit', 'RequestsController@store')->name('submit.request');
 	Route::get('/form', 'RequestsController@index')->name('new.request');
 	Route::get('/list', 'RequestsController@show')->name('list.request');
-	Route::get('/delete', 'RequestsController@destroy')->name('delete.request'); // still not used, should be by ajax.
+	Route::get('/delete/{id}', 'RequestsController@destroy')->name('delete.request'); // still not used, should be by ajax.
 });
 
 Route::prefix('help')->group(function(){

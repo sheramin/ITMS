@@ -13,7 +13,7 @@
     		<td>{{$device->status}}</td>
     		<td>{{$device->description}}</td>
     		<td> <a href="{!! route('edit', ['id' => $device->id]) !!}" class="fa fa-edit" ></a></td>
-    		<td> <a href="#" class="fa fa-trash" title="Delete"></a> </td>
+    		<td> <a href="{!! route('delete', ['id' => $device->id]) !!}" class="fa fa-trash" title="Delete"></a> </td>
     		<!-- {!! route('delete', ['id' => $device->id]) !!} -->
     		<td> <span class="fa fa-list" title="More details"></span> </td>
     	</tr>

@@ -310,8 +310,8 @@
 <!-- Bootstrap 3.3.7 -->
 <script src="{!! asset('bower_components/bootstrap/dist/js/bootstrap.min.js') !!}"></script>
 <!-- Morris.js charts -->
-<script src="{!! asset('bower_components/raphael/raphael.min.js') !!}"></script>
-<script src="{!! asset('bower_components/morris.js/morris.min.js') !!}"></script>
+<script src="{!! asset('bower_components/raphael/raphael.min.js') !!}"></scr</body>ipt>
+<!-- <script src="{!! asset('bower_components/morris.js/morris.min.js') !!}"></script> -->
 <!-- Sparkline -->
 <script src="{!! asset('bower_components/jquery-sparkline/dist/jquery.sparkline.min.js') !!}"></script>
 <!-- jvectormap -->
@@ -333,45 +333,12 @@
 <!-- AdminLTE App -->
 <script src="{!! asset('dist/js/adminlte.min.js') !!}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{!! asset('dist/js/pages/dashboard.js') !!}"></script>
+<!-- <script src="{!! asset('dist/js/pages/dashboard.js') !!}"></script> -->
 <!-- AdminLTE for demo purposes -->
 <script src="{!! asset('dist/js/demo.js') !!}"></script>
 
 <link rel="stylesheet" type="text/css" href="{!! asset('sweetalert2/dist/sweetalert2.min.css') !!}">
 <script type="text/javascript" src="{!! asset('sweetalert2/dist/sweetalert2.min.js') !!}"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("body").on("click", ".fa-trash", function () {
-       swal({
-            title: "Are you sure?", 
-                text: "Are you sure that you want to delete this record?", 
-                type: "question",
-                showCancelButton: true,
-                closeOnConfirm: false,
-                confirmButtonText: "Yes, delete it!",
-                confirmButtonColor: "#ec6c62"
-       }, function() {
-         swal("Deleted!", "messge here", "success");
-       });
-
-     });
-
-    $("body").on("click", ".fa-check", function () {
-       swal({
-            title: "Are you sure?", 
-                text: "Are you sure that it's done!", 
-                type: "question",
-                showCancelButton: true,
-                closeOnConfirm: false,
-                confirmButtonText: "Yes, done!"
-                // confirmButtonColor: "#ec6c62"
-       }, function() {
-         swal("Deleted!", "messge here", "success");
-       });
-
-     });
-  });
-</script>
 
 </body>
 </html>

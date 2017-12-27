@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Validator;
 use App\Requests;
+use Notification;
+use App\Notifications\NewHelpRequest;
 
 class RequestsController extends Controller
 {
@@ -109,6 +111,10 @@ class RequestsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        if( \DB::table('requests')->where('id', $id)->delete() ){
+            return response()->json(['response' => 'Request deleted successfully', 'status' => 'success']);
+        }else{
+            return response()->json(['response' => 'Could not delete Request', 'status' => 'warning']);
+        }
     }
 }
